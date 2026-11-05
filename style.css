@@ -1,0 +1,210 @@
+/* Basic Setup & Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+    padding-bottom: 40px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 15px 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.dashboard-title {
+    margin-bottom: 20px;
+}
+
+.dashboard-title h1 {
+    font-size: 24px;
+}
+
+.dashboard-title p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Summary Cards */
+.summary-cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Form Container */
+.form-container, .history-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.form-container h2, .history-container h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label, .filter-group label, .search-group label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #0066ff;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.btn-delete {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* Filter and Search Bar */
+.filter-search-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-group, .search-group {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Table Styling */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #555;
+}
+
+/* Badges for Income/Expense */
+.badge {
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.badge-income {
+    background-color: #e6fffa;
+    color: #047857;
+}
+
+.badge-expense {
+    background-color: #ffe4e6;
+    color: #b91c1c;
+}
+
+/* Amount Colors */
+.text-income {
+    color: #047857;
+    font-weight: bold;
+}
+
+.text-expense {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+.no-data {
+    text-align: center;
+    color: #888;
+    padding: 20px 0;
+}
